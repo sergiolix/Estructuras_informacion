@@ -1,5 +1,5 @@
 
-package co.edu.ucundinamarca.tallern;
+package co.edu.ucundinamarca.taller2;
 
 import org.apache.log4j.Logger;
 
@@ -14,7 +14,7 @@ public class Main {
     public static void main(String[] args) {
         log.debug("Hello World : this is a debug message");
         log.info("Hello World : this is an info message");
-        System.out.println("esto no se debe usar");
+        
     }
 
 }
