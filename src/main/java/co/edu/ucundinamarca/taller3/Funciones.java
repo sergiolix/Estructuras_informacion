@@ -1,11 +1,15 @@
 
 package co.edu.ucundinamarca.taller3;
 
+
+import org.apache.log4j.Logger;
 /**
  *
  * @author sergio
  */
 public class Funciones {
+
+    private static final Logger LOG = Logger.getLogger(Funciones.class.getName());
     
 
 
@@ -22,7 +26,7 @@ if (numero == 0) {
             return 1;
       } else {
     
-            return numero * factorialRec(numero - 1);
+            return (numero * factorialRec(numero - 1));
       }
 
   
