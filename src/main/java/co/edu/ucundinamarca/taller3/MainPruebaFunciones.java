@@ -17,7 +17,7 @@ public class MainPruebaFunciones {
         
         log.info(Funciones.factorial(numero));
         log.info(Funciones.potencia(numero, numero1));
-        System.out.printf(" %.0f", Funciones.factorialRec(numero1)); 
+        System.out.printf(" %.0f", Funciones.factorialRec(numero)); 
         
         
         
