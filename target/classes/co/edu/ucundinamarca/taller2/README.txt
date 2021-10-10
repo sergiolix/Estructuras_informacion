@@ -1,4 +1,3 @@
-1. apartado5 : cambiandolo de int a  double
-2. apartado 2: comprobar  si son iguales  
-2. apartado 3: faltaba una comprobacion de b==0
-2. apartado 4: Salen muchos mensajes por que se llama muchas veces a el mismo(si no es eso es que no entendi bien ese apartado :,c)
+
+Una iteración consiste en una repetición de un bloque de sentencias un número determinando de veces o hasta que se cumpla una condición. De esta forma el código puede simplificarse notablemente
+
