@@ -16,7 +16,7 @@ public class ListaPunto2 {
    
    public void Ingresar(int x){
        nodo nuevo = new nodo();
-       nuevo.dato1 = x;
+       nuevo.dato = x;
        
        if(primero == null){
            primero = nuevo;
@@ -35,7 +35,7 @@ public class ListaPunto2 {
        nodo actual = new nodo();
        actual = primero;
        do{
-          log.info(actual.dato1);
+          log.info(actual.dato);
           actual = actual.siguiente;
        }while(actual != primero);
    }
@@ -48,9 +48,9 @@ public class ListaPunto2 {
        
        
        do{
-           if(actual.dato1 == x){
+           if(actual.dato == x){
                encontrado = true;
-               dato = actual.dato1;
+               dato = actual.dato;
            }
            actual = actual.anterior;
        }while(actual != ultimo);
@@ -68,9 +68,9 @@ public class ListaPunto2 {
         actual = primero;
         
         do{
-            if(actual.dato1 == x){
+            if(actual.dato == x){
                 log.info("Ingrese un nuevo valor");
-                actual.dato1 = a.nextInt();
+                actual.dato = a.nextInt();
             }
             actual = actual.siguiente;  
         }while(actual != ultimo);

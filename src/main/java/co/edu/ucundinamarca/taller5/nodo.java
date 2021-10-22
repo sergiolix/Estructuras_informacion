@@ -6,7 +6,7 @@ package co.edu.ucundinamarca.taller5;
  * @author Sergio
  */
 public class nodo {
-    String dato;
+    int dato;
     nodo siguiente;
     nodo anterior;
     
