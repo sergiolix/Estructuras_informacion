@@ -14,7 +14,7 @@ public class MainDulceria {
       
       Dulceria dulce = new Dulceria();
       int opcion = 0;
-      String dul = "";
+      String dulces = "";
       boolean eliminado = false;
         
         do{
@@ -24,22 +24,22 @@ public class MainDulceria {
                         + "2. Eliminar un dulce  \n"
                         + "3. Mostrar todos los dulces que hay  \n"
                         + "4. Exit"
-                        , JOptionPane.INFORMATION_MESSAGE));
+                        ,JOptionPane.INFORMATION_MESSAGE));
                 switch (opcion){
                     
                     case 1:
-                        dul = (JOptionPane.showInputDialog(null," Ingrese el dulce a agregar ", " Agregando dulce  ", JOptionPane.INFORMATION_MESSAGE));
-                        dulce.insetar(dul);
+                        dulces = (JOptionPane.showInputDialog(null," Ingrese el dulce a agregar ", " Agregando dulce  ", JOptionPane.INFORMATION_MESSAGE));
+                        dulce.insetar(dulces);
                         break;
                         
                     case 2:
                         if(!dulce.estaVacia()){
-                        dul = (JOptionPane.showInputDialog(null," Ingrese el nombre del dulce a eliminar", " Eliminando  dulce ", JOptionPane.INFORMATION_MESSAGE));
-                        eliminado = dulce.eliminar(dul);
+                        dulces = (JOptionPane.showInputDialog(null," Ingrese el nombre del dulce a eliminar", " Eliminando  dulce ", JOptionPane.INFORMATION_MESSAGE));
+                        eliminado = dulce.eliminar(dulces);
                         if(eliminado){
-                          JOptionPane.showMessageDialog(null, "el dulce eliminado es: " + dul , "eliminando dulce" , JOptionPane.INFORMATION_MESSAGE);  
+                          JOptionPane.showMessageDialog(null, "el dulce eliminado es: " + dulces , "eliminando dulce" , JOptionPane.INFORMATION_MESSAGE);  
                         }else{
-                           JOptionPane.showMessageDialog(null, "el dulce "+ dul +" no esta en la Dulceria", "elemento no encontrado" , JOptionPane.INFORMATION_MESSAGE);    
+                           JOptionPane.showMessageDialog(null, "el dulce "+ dulces +" no esta en la Dulceria", "elemento no encontrado" , JOptionPane.INFORMATION_MESSAGE);    
                         }}else{
                           JOptionPane.showMessageDialog(null, "aun no hay dulces en la dulceria", "lista vacia", JOptionPane.INFORMATION_MESSAGE);  
                         }

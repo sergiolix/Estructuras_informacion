@@ -13,10 +13,11 @@ public class Dulceria {
     public Dulceria(){
         ultimo = null;
     }
+    // esta funcion sirve para verificar si la lista esta vacia
     public boolean estaVacia(){
         return ultimo == null;
     }
-    
+    // esta sirve para insertar los datos a la lista
     public Dulceria insetar(String elemento){
         Nodo nuevo = new Nodo(elemento);
         if(ultimo!= null){
@@ -26,7 +27,7 @@ public class Dulceria {
         ultimo=nuevo;
         return this;  
     }
-    
+    // esta sirve para mostrar los datos a la lista
     public void Mostrarlista(){
         Nodo auxiliar = ultimo.siguiente;
         String cadena = "";
@@ -36,7 +37,7 @@ public class Dulceria {
         }while(auxiliar != ultimo.siguiente);
         JOptionPane.showMessageDialog(null, cadena, "Mostrando los dulces  ",JOptionPane.INFORMATION_MESSAGE);
     }
-    
+    // esta sirve para eliminar un dato especifica de la lista
     public boolean eliminar (String elemento){
         Nodo actual;
         boolean encontrado = false;
