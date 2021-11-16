@@ -39,6 +39,7 @@ public class Nodo {
         info = dato;
     }
     public void verNodo(){
-     LOG.info("{"+info+"}");
+     //LOG.info("{"+info+"}");
+        System.out.println("{"+info+"}");
     }
 }

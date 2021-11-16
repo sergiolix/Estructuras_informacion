@@ -5,7 +5,7 @@ package co.edu.ucundinamarca.taller8;
  *
  * @author Sergio
  */
-public class Arbol {
+class Arbolp {
     Nodo raiz;
     public Nodo insertarRaiz(String dato){
         raiz = new Nodo(dato);
@@ -33,11 +33,29 @@ public class Arbol {
          }
        }
     }
-    
-    
-    
-    
-    
-    
+   
     }
+    
+    
+    
+}
+
+public class Arbol{
+       public static void main (String[]args){
+         Arbolp arbol = new Arbolp();
+         Nodo nodo = arbol.insertarRaiz("A");
+         arbol.raiz.verNodo();
+         
+         
+         arbol.Insertar(nodo, "B", "A");
+         arbol.Insertar(nodo, "C", "A");
+         arbol.Insertar(nodo, "D", "A");
+         arbol.Insertar(nodo, "E", "C");
+         arbol.Insertar(nodo, "F", "C");
+         arbol.Insertar(nodo, "G", "F");
+         arbol.Imprimir(nodo);
+       
+       }
+    
+    
 }
