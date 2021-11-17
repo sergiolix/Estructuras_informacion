@@ -11,10 +11,10 @@ class Arbolp {
         raiz = new Nodo(dato);
         return raiz;
     }
-    public void Imprimir(Nodo nodo){
+    public void Preorden(Nodo nodo){
     for (int i= 0; i < nodo.nohijos;i++){
      nodo.hijos[i].verNodo();
-     Imprimir(nodo.hijos[i]);
+     Preorden(nodo.hijos[i]);
     }
     
     }
@@ -33,12 +33,11 @@ class Arbolp {
          }
        }
     }
-   
+
     }
-    
-    
-    
-}
+        
+     }
+ 
 
 public class Arbol{
        public static void main (String[]args){
@@ -53,8 +52,9 @@ public class Arbol{
          arbol.Insertar(nodo, "E", "C");
          arbol.Insertar(nodo, "F", "C");
          arbol.Insertar(nodo, "G", "F");
-         arbol.Imprimir(nodo);
-       
+         arbol.Preorden(nodo);
+         arbol.raiz.InOrden(nodo);
+         arbol.raiz.niveles(nodo);
        }
     
     

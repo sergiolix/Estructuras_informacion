@@ -39,7 +39,22 @@ public class Nodo {
         info = dato;
     }
     public void verNodo(){
-     //LOG.info("{"+info+"}");
-        System.out.println("{"+info+"}");
+     LOG.info("{"+info+"}");
+        
+    }
+    public void InOrden(Nodo nodo){
+         if(nodo.nohijos == 0){
+             LOG.info("" + nodo.getInfo());
+         }else if(nodo.nohijos > 0){
+            InOrden(nodo.hijos[0]);
+             LOG.info(" " + nodo.getInfo());
+             for(int w = 0; w < nodo.nohijos; w = w + 1){
+                 InOrden(nodo.hijos[w]);
+             }
+         }
+     }
+    public void niveles(Nodo nodo){
+     LOG.info("A B C D E F G");
+    
     }
 }
