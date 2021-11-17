@@ -52,9 +52,8 @@ public class Arbol{
          arbol.Insertar(nodo, "E", "C");
          arbol.Insertar(nodo, "F", "C");
          arbol.Insertar(nodo, "G", "F");
-         arbol.Preorden(nodo);
          arbol.raiz.InOrden(nodo);
-         arbol.raiz.niveles(nodo);
+         
        }
     
     

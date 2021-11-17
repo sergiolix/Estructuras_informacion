@@ -1,2 +1,1 @@
-Es una aplicacion para agregar dulces a una dulceria borrarlos o buscarlos se realizo
-
+de lo visto y realizado por mi la ejecucion mas rapida es la inorder y la mas lenta es la pre orden
